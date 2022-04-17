@@ -1,0 +1,23 @@
+@font-face {
+    font-family: GreatSejagad;
+    src: url(../../fonts/GreatSejagad.otf);
+}
+
+
+.main_title {
+    font-family: GreatSejagad;
+    font-size: 70px;
+    color: #f41e1e;
+    z-index: 1;
+
+}
+
+.main_title2 {
+    font-family: 'Anton', Courier, monospace;
+
+}
+
+.main_title3 {
+    font-family: 'Anton', Courier, monospace;
+    font-size: 23px;
+}

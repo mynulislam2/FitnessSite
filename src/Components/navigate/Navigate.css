@@ -1,0 +1,17 @@
+.Navigate_Container {
+    z-index: 1000;
+}
+
+.item a {
+    color: whitesmoke !important;
+    margin-left: 30px;
+}
+
+.item a:hover {
+    text-decoration: underline;
+    text-decoration-color: tomato !important;
+    -moz-text-decoration-color: tomato !important;
+    -moz-text-decoration-line: 5px;
+    text-underline-offset: 15px;
+
+}

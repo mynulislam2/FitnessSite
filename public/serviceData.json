@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "Image": "https://i.ibb.co/MVNPzts/card-image-07.jpg",
+        "price": 35,
+        "title": "Basic",
+        "service1": "Personal Trainer",
+        "service2": "Using all Tools",
+        "service3": "Beginner guideline",
+        "service4": "24 Hour Services"
+    },
+    {
+        "id": 2,
+        "Image": "https://i.ibb.co/Wn8vWQg/card-image-09.jpg",
+        "price": 40,
+        "title": "Standard",
+        "service1": "Personal Trainer",
+        "service2": "Special Meditation",
+        "service3": "Using all Tools",
+        "service4": "24 Hour Services"
+    },
+    {
+        "Image": "https://i.ibb.co/r70bLZn/card-image-11.jpg",
+        "price": 45,
+        "title": "Premium",
+        "service1": "Personal Trainer",
+        "service2": "Special Meditation",
+        "service3": "Using all Tools",
+        "service3": "special motivation",
+        "service4": "24 Hour Services"
+    }
+]

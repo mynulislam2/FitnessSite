@@ -1,0 +1,14 @@
+.footerImage img {
+    width: 100%;
+}
+
+.Footers {
+    background-color: #171c34;
+    height: 300px;
+}
+
+
+
+li {
+    list-style: none;
+}

@@ -1,0 +1,96 @@
+@font-face {
+    font-family: GreatSejagad;
+    src: url(../../fonts/GreatSejagad.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;500;700;900&display=swap');
+
+.Home_container {
+    background-image: linear-gradient(rgba(219, 24, 24, 0.477), rgba(0, 0, 0, 0.584)), url(../../images/banner/main.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    height: 100vh;
+    position: relative !important;
+    color: white;
+}
+
+.Home_container p {
+    font-family: GreatSejagad;
+    font-size: 90px;
+    letter-spacing: -3px;
+
+}
+
+.Home_container h6 {
+    font-family: 'Anton', Courier, monospace;
+    font-size: 80px;
+}
+
+.Hometitle {
+    z-index: 100;
+    position: absolute;
+    left: 10rem;
+    top: 9rem;
+    transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+}
+
+.Hometitle .title1,
+.title2 {
+    margin: -25px;
+    text-align: center;
+}
+
+.wave img {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+.leftSideFancy img {
+    position: absolute;
+    left: 0px;
+    height: 105vh;
+
+}
+
+.rightSideFancy img {
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .Home_container {
+        height: 90vh;
+
+    }
+
+    .Home_container p {
+        font-size: 75px
+    }
+
+    .Home_container h6 {
+
+
+        font-size: 80px;
+
+    }
+
+    .leftSideFancy,
+    .rightSideFancy {
+        display: none;
+    }
+
+    .Hometitle {
+        left: 2rem;
+        top: 9rem;
+    }
+}
