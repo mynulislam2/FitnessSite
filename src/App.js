@@ -23,7 +23,8 @@ function App() {
             <RequireAuth><CheckOut></CheckOut></RequireAuth>
           }></Route>
           <Route path="*" element={<NotFound></NotFound>}></Route>
-        </Routes>
+        </Routes>          
+
       </BrowserRouter>
     </>
   );

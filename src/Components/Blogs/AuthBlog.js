@@ -1,9 +1,10 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import image from '../../images/blogs/authorization.png';
 const AuthBlog = () => {
     return (
-        <div>
-            <img width="100%" src={image} alt="" />
+        <Container>
+            <img className='mt-5' style={{borderRadius:"20px"}} width="100%"  src={image} alt="" />
             <div className='d-flex justify-content-center mt-5'>
                          <div>
                 <h1>
@@ -19,7 +20,7 @@ const AuthBlog = () => {
             </div>
 
 
-        </div>
+        </Container>
     );
 };
 
