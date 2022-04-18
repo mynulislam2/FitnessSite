@@ -8,7 +8,7 @@ const RequireAuth = ({ children }) => {
   const [user, loading, error] = useAuthState(auth)
         let location = useLocation();
         if (loading) {
-          return  <div style={{height:"100vh"}} className='d-flex justify-content-center align-items-center'> <Spinner animation="border" variant="danger" />  Loading...</div> 
+          return  <div style={{height:"100vh"}} className='d-flex justify-content-center align-items-center'> <Spinner className='me-3' animation="border" variant="danger" />  Loading...</div> 
           ;
         }
     if (!user) {
