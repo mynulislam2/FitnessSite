@@ -11,11 +11,11 @@ const Footer = () => {
             <div className="Footers text-white">
                 <Container>
                     <Row style={{height:"300px"}} className="justify-content-center align-items-center">
-                        <Col xs={12} lg={4}>
+                        <Col xs={4} lg={4}>
                             <h6>Ⓒ copyright {new Date().getFullYear()}</h6> <br />
                             <p>Disclaimer | Privacy policy</p>
                         </Col>
-                        <Col xs={12} lg={4} className="list-style-none" >        <div><h5>PROGRAMS</h5>
+                        <Col xs={4} lg={4} className="list-style-none" >        <div><h5>PROGRAMS</h5>
                         <li>About</li>
                         <li>Tours</li>
                         <li>Membership</li>
@@ -25,7 +25,7 @@ const Footer = () => {
                         </Col>
 
 
-                        <Col xs={12} lg={4} className="list-style-none"> 
+                        <Col xs={4} lg={4} className="list-style-none"> 
                         
                             <h5>LOCATION & HOURS</h5>
                             <li>Mon – Sat: 6:00 – 12:00

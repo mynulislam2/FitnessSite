@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../firebase.init';
 import SocialAuth from '../SocialAuth/SocialAuth';
 const Registraion = () => {
@@ -13,7 +13,8 @@ const [Agree, setAgree] = useState(false);
     user,
     loading,
     error,
-  ] = useCreateUserWithEmailAndPassword(auth);
+  ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
+  
   const passwordRef = useRef()
   const EmailRef = useRef()
   const FirstNameRef = useRef()
@@ -23,6 +24,7 @@ let checked;
   const CheckBox=(event)=>{
     checked =event.target.checked
 }
+console.log();
 if (user) {
   navigate(from, { replace: true });
 
@@ -76,6 +78,7 @@ if (checked) {
                   up"/>
                 </div>
                 <hr className="my-4" />
+                <small className='d-flex justify-content-center mb-3 mt-0 '>Already Login?                 <Link to='/login' className='text-center text-primary text-decoration-none ms-2'> Log in</Link></small>
                 <SocialAuth></SocialAuth>
               </form>
             </div>

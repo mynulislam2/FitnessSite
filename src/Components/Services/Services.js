@@ -16,22 +16,17 @@ const Services = () => {
     navigate("/checkout")
  }
 
-
-
-
-
     return (
         <Container className="mt-5">
-            <Row>
-                <p>PRICING PLAN</p>
+            <Row >
                 <h1 className="mt-5 package-title">Comportable Pricing package and <br />
                     choose your best plan</h1>
 
                 {
                     Cards.map((card) =>
 
-                        <Col xs={12} lg={4}>
-                            <Card style={{ width: '18rem', height: "600px" }}>
+                        <Col xs={12} md={6} lg={4}>
+                            <Card className="mx-auto mt-3" style={{ width: '18rem', height: "600px" }}>
                                 <Card.Img variant="top" src={card.Image} />
                                 <Card.Body>
                                     <div style={{ width: "100px", height: "100px", border: "8px solid #ea1b29" }} className='rounded-circle  d-flex justify-content-center align-items-center mx-auto text-center'><Card.Title ><span className='price'>${card.price}</span> <br /><span className='monthly'>Monthly</span></Card.Title></div>

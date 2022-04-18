@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../firebase.init';
 import SocialAuth from '../SocialAuth/SocialAuth';
@@ -14,18 +14,24 @@ const Login = () => {
     loading,
     error,
   ] = useSignInWithEmailAndPassword(auth);
-
+  const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(
+    auth
+  );
   const passwordRef = useRef()
   const EmailRef = useRef()
 
-if (user) {
-  navigate(from, { replace: true });  
-}
-  const SignIn = ( event) => {
+  if (user) {
+    navigate(from, { replace: true });
+  }
+  if (sending) {
+    return <p>Sending...</p>;
+  }
+
+  const SignIn = (event) => {
     event.preventDefault()
     const Email = EmailRef.current.value
     const password = passwordRef.current.value
-  signInWithEmailAndPassword(Email, password)
+    signInWithEmailAndPassword(Email, password)
   }
   return (
     <div className="container">
@@ -36,18 +42,24 @@ if (user) {
               <h5 className="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
               <form onSubmit={SignIn}>
                 <div className="form-floating mb-3">
-                  <input type="email" ref={EmailRef} className="form-control" id="floatingInput" placeholder="name@example.com" required/>
+                  <input type="email" ref={EmailRef} className="form-control" id="floatingInput" placeholder="name@example.com" required />
                   <label for="floatingInput">Email address</label>
                 </div>
                 <div className="form-floating mb-3">
-                  <input type="password" ref={passwordRef} className="form-control" id="floatingPassword" placeholder="Password" required/>
+                  <input type="password" ref={passwordRef} className="form-control" id="floatingPassword" placeholder="Password" required />
                   <label for="floatingPassword">Password</label>
                 </div>
                 <div className="d-grid">
                   <input type="submit" className="btn btn-primary btn-login text-uppercase fw-bold" value="Sign In" />
                 </div>
+                <p className='btn' onClick={async () => {
+                      const Email = EmailRef.current.value
+                  await sendPasswordResetEmail(Email);
+                  alert('Sent email');
+                }}>Forget Password?</p>
                 <hr className="my-4" />
-                <Link to='/register' className='text-center text-primary '>create new account</Link>
+                <small className='d-flex justify-content-center mb-3 mt-0 '>New user?                 <Link to='/register' className='text-center text-primary text-decoration-none ms-2'> create new account</Link></small>
+
                 <SocialAuth></SocialAuth>
               </form>
             </div>
