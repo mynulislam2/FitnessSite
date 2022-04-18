@@ -3,7 +3,7 @@
 Features: 
 ◉I have added No reload navbar
 ◉Login and signUp 
-◉Three Blogs
+◉Three Blogs <br/>
 Technology:
 ◉React Bootstrap
 ◉Material ui icons
