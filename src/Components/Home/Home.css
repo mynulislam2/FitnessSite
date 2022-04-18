@@ -27,7 +27,7 @@
 }
 
 .Hometitle {
-    z-index: 100;
+    z-index: 1;
     position: absolute;
     left: 10rem;
     top: 9rem;

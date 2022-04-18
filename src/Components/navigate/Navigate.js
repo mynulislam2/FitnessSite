@@ -31,6 +31,7 @@ const Navigate = ({color}) => {
                             :
                             <Nav.Link as={Link} to="/login">Sign In</Nav.Link>
     }
+     <Nav.Link className='text-white' as={Link} to="/about">{user?.displayName}</Nav.Link>
                             
                             </Nav>
                     </Navbar.Collapse>

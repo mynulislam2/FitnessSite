@@ -5,7 +5,7 @@ const LoginToast = () => {
     return (
         <div>
             <Toast className='mb-3'>
-    <Toast.Body className="text-Success">✅ Email has been sent</Toast.Body>
+    <Toast.Body className="text-Success">✅ Request successful</Toast.Body>
   </Toast>
         </div>
     );

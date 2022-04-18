@@ -1,10 +1,7 @@
-.Navigate_Container {
-    z-index: 1000;
-}
-
 .item a {
-    color: whitesmoke !important;
     margin-left: 30px;
+    color: rgb(251, 249, 249) !important;
+    z-index: 1000;
 }
 
 .item a:hover {
