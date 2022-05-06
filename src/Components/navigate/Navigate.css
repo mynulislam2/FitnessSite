@@ -1,14 +1,9 @@
 .item a {
-    margin-left: 30px;
+    margin-left: 10px;
     color: rgb(251, 249, 249) !important;
     z-index: 1000;
 }
 
-.item a:hover {
-    text-decoration: underline;
-    text-decoration-color: tomato !important;
-    -moz-text-decoration-color: tomato !important;
-    -moz-text-decoration-line: 5px;
-    text-underline-offset: 15px;
-
+.navbar-dark .navbar-toggler {
+    width: 12% !important;
 }

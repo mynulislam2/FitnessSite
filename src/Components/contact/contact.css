@@ -1,0 +1,32 @@
+.contact {
+    margin-top: 60px;
+
+}
+
+.contact-info {
+    background-image: url("./image/map.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Anton', Courier, monospace;
+    min-height: 200px;
+}
+
+.form-control {
+    padding: 15px;
+}
+
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #8bbafe;
+    outline: 0;
+    box-shadow: none;
+    border-radius: 0px;
+    border-bottom: 2px solid rgb(204, 204, 215) !important
+}
+
+h3 {
+    font-size: 23px;
+    margin: 0 0 10px;
+}
