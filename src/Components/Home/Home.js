@@ -4,7 +4,6 @@ import rightSideFancy from '../../images/banner/floating_image_03_02.png';
 import wave from '../../images/banner/white_bottom_wave_02.png';
 import BecomeStroger from '../BecomeStronger/BecomeStroger';
 import Contact from '../contact/Contact';
-import Footer from '../Footer/Footer';
 import Navigate from '../navigate/Navigate';
 import Services from '../Services/Services';
 import './Home.css';
@@ -30,7 +29,6 @@ const Home = () => {
         <Services></Services>
         <BecomeStroger></BecomeStroger>
 <Contact></Contact>
-        <Footer></Footer>
   </>
 
     );

@@ -1,5 +1,7 @@
 import emailjs from '@emailjs/browser';
 import React, { useRef, useState } from "react";
+import Footer from '../Footer/Footer';
+import Navigate from '../navigate/Navigate';
 import './contact.css';
 function Contact() {
   const [formdata, setFormdata] = useState({
@@ -63,7 +65,8 @@ function Contact() {
   };
 
   return (
-    <section  className="contact">
+    <div>
+        <section  className="contact">
       <div className="container">
         <title title="Get in Touch" />
 
@@ -156,6 +159,9 @@ function Contact() {
         </div>
       </div>
     </section>
+    <Footer></Footer>
+    </div>
+
   );
 }
 

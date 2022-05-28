@@ -2,10 +2,11 @@ import React, { useRef } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../firebase.init';
+import Footer from '../Footer/Footer';
 import Navigate from '../navigate/Navigate';
 import SocialAuth from '../SocialAuth/SocialAuth';
+import './Login.css';
 import LoginToast from './LoginToast';
-import './Login.css'
 const Login = () => {
   let navigate = useNavigate();
   let location = useLocation();
@@ -76,6 +77,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
 
 

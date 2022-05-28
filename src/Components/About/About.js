@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import about from '../../images/about/about.png';
+import Footer from '../Footer/Footer';
 import Navigate from '../navigate/Navigate';
 
 import './About.css';
@@ -28,7 +29,7 @@ const About = () => {
 
             </Container>
 
-
+<Footer></Footer>
 
         </div>
     );

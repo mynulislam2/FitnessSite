@@ -26,7 +26,7 @@ const Navigate = ({color}) => {
                             Blogs
                             </Nav.Link>
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
-                            <Nav.Link as={Link} to="/contact">contact</Nav.Link>
+                            
                             {user?<Nav.Link 
                             onClick={()=>logout()} as={Link} to="/">Sign Out</Nav.Link>
                             :
